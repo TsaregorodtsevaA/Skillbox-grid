@@ -1,0 +1,406 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+:root {
+  --main: #3F2AFF;
+  --gray: #666;
+  --almostBlack: #212133;
+}
+
+h1, h2, h3, h4, h5, h6, a, p, ul{
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Black"),
+  url('../fonts/Roboto-Black.woff2') format("woff2"),
+  url('../fonts/Roboto-Black.woff') format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Bold"),
+  url('../fonts/Roboto-Bold.woff2') format("woff2"),
+  url('../fonts/Roboto-Bold.woff') format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Medium"),
+  url('../fonts/Roboto-Medium.woff2') format("woff2"),
+  url('../fonts/Roboto-Medium.woff') format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Regular"),
+  url('../fonts/Roboto-Regular_1.woff2') format("woff2"),
+  url('../fonts/Roboto-Regular_1.woff') format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Light"),
+  url('../fonts/Roboto-Light.woff2') format("woff2"),
+  url('../fonts/Roboto-Light.woff') format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto-Thin"),
+  url('../fonts/Roboto-Thin_1.woff2') format("woff2"),
+  url('../fonts/Roboto-Thin_1.woff') format("woff");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+/* GLOBAL */
+
+.flex {
+  display: flex;
+}
+
+.text-descr {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.btn {
+  border: none;
+  border-radius: 20px;
+  background-color: var(--main);
+  color: #fff;
+  cursor: pointer;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+}
+
+/* HEADER*/
+
+.main-title {
+  display: none;
+}
+
+
+.header {
+  background-color: var(--main);
+}
+
+.header__content {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 29px;
+  padding-bottom: 26px;
+}
+
+
+
+
+.header__nav .nav__item {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.header__nav .nav__item:not(:last-child) {
+  margin-right: 57px;
+}
+
+.burger {
+  display: none;
+}
+
+
+
+/* HERO */
+
+
+.hero {
+  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, var(--almostBlack) 100%);
+  color: #fff;
+}
+
+.hero__content {
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 7px;
+}
+
+.hero__img img {
+  max-width: 100%;
+}
+
+.hero__text {
+  margin-bottom: 12px;
+}
+
+
+.hero__title {
+  margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 100%;
+}
+
+.hero__descr {
+  margin-bottom: 61px;
+  font-size: 18px;
+}
+
+.hero__btn {
+  padding: 24px 75px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+
+
+/* ADVANTAGES */
+
+.advantages__content {
+  padding-top: 81px;
+  padding-bottom: 78px;
+}
+
+.advantages__title {
+  margin-bottom: 16px;
+}
+
+.advantages__top {
+  margin-bottom: 24px;
+  align-items: center;
+}
+
+.advantages__img {
+  height: fit-content;
+}
+
+.top__wrapper {
+  display: block;
+}
+
+.advantages__descr {
+  color: var(--gray);
+}
+
+.advantages__item .item__text {
+  padding: 12px 0;
+  padding-left: 31px;
+}
+
+.advantages__item-1 .item__text {
+  padding-top: 10px;
+}
+
+.advantages__item {
+  justify-content: space-between;
+  color: var(--gray);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+.advantages__item-1::before {
+  content: url('../img/adv-1.svg');
+  width: 80px;
+  height: 80px;
+}
+
+.advantages__item-2::before {
+  content: url('../img/adv-2.svg');
+  width: 80px;
+  height: 80px;
+}
+
+.advantages__item-3::before {
+  content: url('../img/adv-3.svg');
+  width: 80px;
+  height: 80px;
+}
+
+
+
+/* TEACHERS */
+
+
+.teachers {
+  background-color: var(--almostBlack);
+}
+
+.teachers__content {
+  padding-top: 73px;
+  padding-bottom: 74px;
+}
+
+
+
+.teachers__title {
+  color: #fff;
+  margin-bottom: 23px;
+}
+
+.teachers__item .item__img {
+  border-radius: 40px 40px 0px 0px;
+  margin-bottom: 28px;
+  width: 100%;
+}
+
+.teachers__item .item__title {
+  margin-bottom: 7px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.teachers__item .item__descr {
+  color: var(--gray);
+}
+
+
+/* COURSES */
+
+
+
+.courses__content {
+  padding-top: 74px;
+  padding-bottom: 49px;
+}
+
+.courses__title {
+  color: var(--almostBlack);
+  margin-bottom: 24px;
+}
+
+
+.courses__item {
+  font-size: 0;
+  margin-bottom: 30px;
+}
+
+.courses__item .item__img {
+  width: 100%;
+}
+
+
+.courses__item .item__bottom {
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 300px;
+  background-color: #EDF0F9;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 33px 30px 31px 31px;
+}
+
+.courses__item .item__bottom .item__text .item__descr {
+  color: var(--gray);
+  margin-bottom: 10px;
+}
+
+.courses__item .item__text .item__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.courses__item .item__btn {
+  width: fit-content;
+  padding: 20px 59px;
+  font-size: 16px;
+}
+
+.courses__time {
+  align-items: center;
+  position: absolute;
+  right: 20px;
+  top: 11px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+
+.courses__time .time__pic {
+  margin-right: 5px;
+}
+
+
+/* FOOTER */
+
+.footer__top {
+  background-color: #2E2B44;
+}
+
+.footer__top-content {
+  padding-top: 28px;
+  padding-bottom: 24px;
+}
+
+.footer__list {
+  justify-content: center;
+}
+
+.footer__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.footer__bottom-content {
+  text-align: center;
+
+}
+
+.footer__copy {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  color: #2E2B44;
+}
+
+.copy-sign {
+  color: var(--main);
+}
